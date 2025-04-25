@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 6</title>
+  <style>
+    body {
+        text-align: center;
+        padding-top: 50px;
+        font-family: cursive;
+        background-color: black;
+     
+    }
+    
+    .conteiner{
+        background-color:white ;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    
+    }
+    img {
+      cursor: pointer;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Clique na lâmpada para ligar ou desligar</h1>
+        <img 
+        id="lamp" 
+        src="./imgs/lampada-off.jpg" 
+        alt="Lâmpada Apagada"
+        onclick="mudarLamp()" 
+        >
+    </div>
+
+  
+
+  <script>
+    function mudarLamp() {
+      const lamp = document.getElementById("lamp")
+      if (lamp.src.includes("lampada-off")) {
+        lamp.src = "./imgs/lampada-on.jpg"
+      } else {
+        lamp.src = "./imgs/lampada-off.jpg"
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .destaque {
+      background-color: #d4edda;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Portal Escolar</h1>
+
+  <p id="mensagem">Clique no botão abaixo para alterar essa mensagem.</p>
+
+  <button onclick="alterarMensagem()">Alterar Mensagem</button>
+  <button onclick="criarTarefa()">Adicionar Tarefa</button>
+
+  <ul id="lista-tarefas">
+    <li>Estudar Matemática</li>
+    <li>Revisar Ciências</li>
+  </ul>
+
+  <script>
+    // DOM e js 
+    function alterarMensagem() {
+      const paragrafo = document.getElementById("mensagem")
+      paragrafo.innerText = "Mensagem alterada com sucesso!"
+      paragrafo.classList.add("destaque")
+    }
+    function criarTarefa() {
+      const novaTarefa = document.createElement("li")
+      novaTarefa.innerText = "Ler capítulo de História"
+      document.getElementById("lista-tarefas").appendChild(novaTarefa)
+    }
+    console.log("Página carregada e DOM pronto para ser manipulado!")
+  </script>
+
+</body>
+</html>

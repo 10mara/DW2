@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 5</title>
+</head>
+<body>
+	<p>Nome Completo:</p>
+	<input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome"/>
+	<br />
+	<input type="button" value="Ok" id="btn-boas-vindas"/>
+	<hr />
+
+	<script>
+		function boasVindas(nome) {
+			alert('Seja bem vindo(a) ' + nome)	
+		}
+		document.getElementById('btn-boas-vindas').addEventListener('click', function() {
+			var nome = document.getElementById('nome-completo').value
+			boasVindas(nome)
+		})
+	</script>
+<!-- Outros exemplos de adiça~o de eventos :
+<input type="button" value="Ok" id="btn-boas-vindas" onclick="boasVindas(document.getElementById('nome-completo').value)" />
+document.getElementById('btn-boas-vindas').setAttribute('onclick', 'boasVindas(document.getElementById("nome-completo").value)');
+-->
+</body>
+</html>

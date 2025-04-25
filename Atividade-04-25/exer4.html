@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 4</title>
+  <style>
+    .destaque {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+    .invisivel {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Escola</h1>
+
+  <div id="aluno">
+    <p>Nome do Aluno: <span id="nomeAluno">João da Silva</span></p>
+    <p>Ano Escolar: <span id="anoEscolar">6º Ano</span></p>
+  </div>
+
+  <button onclick="alterarEstilos()">Alterar Estilo</button>
+  <button onclick="removerElemento()">Remover Informação</button>
+
+  <script>
+    function alterarEstilos() {
+      let aluno = document.getElementById("aluno")
+      aluno.style.backgroundColor = "lightblue"
+      aluno.style.padding = "20px"
+      aluno.classList.toggle("destaque")
+    }
+    function removerElemento() {
+      let nomeAluno = document.getElementById("nomeAluno")
+      nomeAluno.classList.add("invisivel")
+    }
+  </script>
+
+</body>
+</html>

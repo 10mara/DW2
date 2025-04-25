@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <script src="exer1.js" defer></script><!--Maneira de integração externa onde é integrado um arquivo js -->
+
+    <script>
+         window.onload = function() {
+           console.log("Exemplo de script")
+        }
+    </script><!--Forma de integração interna em bloco de script menos usada pois pode ter erro de carregamento-->
+
+</head>
+<body>
+    <!--Exemplo de integração inline-->
+    <p id="texto">Texto original</p>
+    <button onclick="document.getElementById('texto').innerText = 'Texto alterado!'">
+    Alterar texto
+    </button>
+    
+    <script>
+            console.log("script no final do body carregado")
+    </script><!--Maneira de integração interna em bloco de script mais usada pois pode evitar mais erros de carregamento por estar no final-->
+</body>
+</html>
