@@ -1,9 +1,8 @@
-import './Botoes.css'
-function Botoes(){
-    return(
-        <div>
-           <button> Calcular IMC </button>
-        </div>
-    );
+import'./Botoes.css'
+export default function Botoes({ onCalcular }) {
+  return (
+    <div>
+      <button onClick={onCalcular}>Calcular IMC</button>
+    </div>
+  );
 }
-export default Botoes;

@@ -1,7 +1,12 @@
-input{
-    margin: 2px;
-    border-radius: 4px;
+input {
+  margin: 10px 0;
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
 }
+
 input:focus {
     border-color: #6f00ff;    
     background-color: #f6f0ff;  
