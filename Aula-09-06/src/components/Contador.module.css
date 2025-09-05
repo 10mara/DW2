@@ -1,0 +1,27 @@
+.container{
+  background-color: var(--gray-700);
+  background-color: rgb(15, 36, 80);
+  padding: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contadorDisplay{
+  color: var(--text-default);
+  font-size: 2rem;
+}
+.botaoContainer{
+  display: flex;
+  gap: 1rem;
+}
+.botao{
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--primary);
+  color: var(--gray-300);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
