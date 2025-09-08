@@ -20,8 +20,8 @@
 .botao{
   padding: 1rem;
   margin: 1rem;
-  background-color: var(--primary);
-  color: var(--gray-300);
+  background-color: var(--info);
+  color: var(--gray-100);
   font-size: 2rem;
   border-radius: 0.5rem;
 }
